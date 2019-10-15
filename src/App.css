@@ -1,19 +1,37 @@
+.demo-big-content {
+  height: 100vh;
+}
+
 .header-color {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #833ab4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+  height: 5vh;
+  position: static;
 }
 
 .landing-grid {
-  background: #833ab4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #833ab4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
-  position: fixed;
-  top: 0;
+  position: relative;
+
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 95vh;
+  overflow: auto;
+}
+
+.page-content {
+  padding-right: 5px;
+  ;
 }
 
 .projects-grid {
@@ -31,7 +49,6 @@
 
 .contact-body {
   margin: auto;
-  position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -65,7 +82,8 @@
 
 .contact-list i {
   font-size: 66px;
-  padding-right: 5rem;
+  padding-right: 3rem;
+
 }
 
 
@@ -73,19 +91,21 @@
 
 .avatar-img {
   height: 250px;
-  padding-top: 5em;
+  margin-top: 50px;
+  border-radius: 150%;
 }
 
 .banner-text {
   background-color: black;
   opacity: .8;
-  width: 75%;
+  max-width: 75%;
   margin: auto;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 40px;
   font-weight: bold;
   color: white;
 }
@@ -104,8 +124,8 @@
 
 .social-links {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: center;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -113,4 +133,113 @@
   color: white;
   font-size: 5em;
   padding: 8px;
+}
+
+/* About me page */
+
+/* .header {
+  background-color: #833ab4;
+
+} */
+.back {
+  background: #833ab4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+  position: absolute;
+  padding-top: 5em;
+  height: 91vh;
+  overflow: auto;
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  max-width: 60%;
+  border-radius: 50%;
+}
+
+.aboutme-paragraph {
+  color: #fdeff9;
+  overflow: 'auto';
+  height: 'inherit';
+  flex: 1;
+  text-align: justify;
+  padding-top: 1em;
+  font-family: "raleway";
+  font-weight: bold;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.center2 {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+}
+
+.back1 {
+  background: #83a4d4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.aboutme-paragraph {
+  overflow: 'auto';
+  height: 'inherit';
+  text-align: justify;
+  font-family: "raleway";
+  font-weight: bold;
+  background-color: black;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.aboutme-paragraph a {
+  margin-left: 4px;
+  color: white;
+  font-size: 25px;
+  ;
+}
+
+.center2 {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+}
+
+.back1 {
+  background: #83a4d4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.channel {
+  color: black;
+}
+
+/* project page */
+.card-action {
+  display: flex;
+  justify-content: space-between;
 }

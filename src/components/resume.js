@@ -1,97 +1,132 @@
-import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
-import Education from './education';
-import Experience from './experience';
-import Skills from './skills';
-
+import React, { Component } from "react";
+import { Grid, Cell } from "react-mdl";
+import Education from "./education";
+import Experience from "./experience";
+import Skills from "./skills";
+import image from "./profile.jpg";
 
 class Resume extends Component {
   render() {
-    return(
+    return (
       <div>
         <Grid>
           <Cell col={4}>
-            <div style={{textAlign: 'center'}}>
+            <div style={{ textAlign: "center" }}>
               <img
-                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+                src={image}
                 alt="avatar"
-                style={{height: '200px'}}
-                 />
+                style={{ height: "200px", borderRadius: "50%" }}
+              />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Paul Hanna</h2>
-            <h4 style={{color: 'grey'}}>Programmer</h4>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <h5>Address</h5>
-            <p>1 Hacker Way Menlo Park, 94025</p>
-            <h5>Phone</h5>
-            <p>(123) 456-7890</p>
-            <h5>Email</h5>
-            <p>someone@example.com</p>
-            <h5>Web</h5>
-            <p>mywebsite.com</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <h2 style={{ paddingTop: "1em" }}>Kuntal Ghosh</h2>
+            <h4 style={{ color: "black" }}>Profile</h4>
+            <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
+            <h7>
+              Ambitious, Quick-learner, Self-motivated, Positive attitude and
+              effective under-pressure. These are just some of the qualities I
+              have.
+            </h7>
+            <p>
+              <br />
+              • Developed 8+ web applications for several reputed organizations
+              <br /> • Designer and developer of two web based pos solutions
+              <br /> • Developer and moderator of six 4.6+ rating app
+            </p>
+            <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
+            <h4>Address</h4>
+            <p>Dhaka 1212</p>
+            <h4>Phone</h4>
+            <p>(+880) 1772-132915</p>
+            <h4>Email</h4>
+            <p>kuntalghosh.ewu@gmail.com</p>
+            <h4>Web</h4>
+            <p>https://kuntal-ghosh.github.io</p>
+            <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
           </Cell>
           <Cell className="resume-right-col" col={8}>
             <h2>Education</h2>
 
-
             <Education
-              startYear={2002}
-              endYear={2006}
-              schoolName="My University"
-              schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-               />
+              startYear={2012}
+              endYear={2017}
+              schoolName="East West University"
+              schoolDescription="Bachelor of Science in Computer Science and Engineering"
+            />
 
-               <Education
-                 startYear={2007}
-                 endYear={2009}
-                 schoolName="My 2nd University"
-                 schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                  />
-                <hr style={{borderTop: '3px solid #e22947'}} />
+            <hr style={{ borderTop: "3px solid #e22947" }} />
 
-              <h2>Experience</h2>
+            <h2>Experience</h2>
 
             <Experience
-              startYear={2009}
-              endYear={2012}
-              jobName="First Job"
-              jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-              />
+              startYear={"july 2019"}
+              endYear={"present"}
+              jobName="Raihana Consulting"
+              designation="Sharepoint Developer"
+              jobDescription={
+                <div>
+                  <div>
+                    I have contributed in several projects of this Company which
+                    works in Microsoft Technologies.
+                  </div>
+                  <div>
+                    • Design, develop, debug and test SPFX 2019 Application,
+                  </div>
+                  <div>• Develop Webparts using modern Technologies.</div>
+                </div>
+              }
+            />
 
-              <Experience
-                startYear={2012}
-                endYear={2016}
-                jobName="Second Job"
-                jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                />
-              <hr style={{borderTop: '3px solid #e22947'}} />
-              <h2>Skills</h2>
-              <Skills
-                skill="javascript"
-                progress={100}
-                />
-                <Skills
-                  skill="HTML/CSS"
-                  progress={80}
-                  />
-                  <Skills
-                    skill="NodeJS"
-                    progress={50}
-                    />
-                    <Skills
-                      skill="React"
-                      progress={25}
-                      />
-
-
+            <Experience
+              startYear={"Oct 2018"}
+              endYear={"April 2019"}
+              jobName="Perky Rabbit "
+              designation=".Net Developer"
+              jobDescription={
+                <div>
+                  <div>
+                    I started my professional career in this company. My team
+                    already have developed two large scaled webs based pos
+                    solution for several reputed companies.
+                  </div>
+                  <div>• Design, develop, debug and test application,</div>
+                  <div>• Data encryption and secured login procedure,</div>
+                  <div>
+                    • Provide flexible application architecture with high
+                    customizability{" "}
+                  </div>
+                </div>
+              }
+            />
+            <Experience
+              startYear={"Nov2018"}
+              endYear={"Jan 2019"}
+              jobName="QUANTUM METHOD (REMOTE) "
+              designation="Software Engineer(Volunteer)"
+              jobDescription={
+                <div>
+                  <div>
+                    I have contributed in several projects of this institution
+                    whose main goal is social and humanitarian improvements.
+                  </div>
+                  <div>• Design and develop web applications,</div>
+                  <div>
+                    • Moderation and upgradation of existing web applications
+                  </div>
+                </div>
+              }
+            />
+            <hr style={{ borderTop: "3px solid #e22947" }} />
+            <h2>Skills</h2>
+            <Skills skill="javascript" progress={100} />
+            <Skills skill="C#" progress={80} />
+            <Skills skill="HTML/CSS/SASS" progress={80} />
+            <Skills skill="Asp.Net" progress={50} />
+            <Skills skill="React.js" progress={60} />
           </Cell>
         </Grid>
       </div>
-    )
+    );
   }
 }
 
